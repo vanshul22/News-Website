@@ -14,7 +14,7 @@
 
 <body>
     <!-- Navbar starts here -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info border border-dark rounded-bottom">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,6 +34,36 @@
         </div>
     </nav>
 
+    <!-- Section starts from here -->
+    <section>
+        <div class="container mt-5">
+            <h1>Breaking News</h1>
+            <hr>
+            <!-- Accordian Starts from here -->
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" id="">
+                            Title
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body" id="">
+                            Descripton
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer starts from here -->
+    <footer>
+        <div class="fixed-bottom text-white text-center p-2 " style="background-color: rgb(0, 0, 0); ">
+            News Website © 2022 Copyright
+            <a class="text-white" style="text-decoration: none;" href="mailto:vkvanshulkesharwani54@gmail.com?subject=Need help for News Website">vkvanshulkesharwani54@gmail.com</a>
+        </div>
+    </footer>
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
