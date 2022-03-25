@@ -2,7 +2,7 @@
 Website Name - News Website
 Name : Vanshul Kesharwani
 Date : 24/03/2022
-Version : 2.1.0
+Version : 2.2.1
 Email : vkvanshulkesharwani54@gmail.com
 Description : This is a Web app for latest news. Fetching from news API website.
 */

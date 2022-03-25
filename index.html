@@ -37,7 +37,64 @@
     <!-- Section starts from here -->
     <section>
         <div class="container mt-5">
-            <h1>Breaking News</h1>
+            <!-- Container for heading and dropdown. -->
+            <div class="d-flex justify-content-between">
+                <h1 style="display:inline-block;">Breaking News</h1>
+                <!-- Dropdown starts from here -->
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="selectCountry" data-bs-toggle="dropdown" aria-expanded="false"> Select Country</button>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="selectCountry">
+                        <li class="dropdown-item">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="countryRadio" id="li-1" value="in" checked>
+                                <label class="form-check-label" for="li-1">
+                                    India
+                                </label>
+                            </div>
+                        </li>
+                        <li class="dropdown-item">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="countryRadio" id="li-2" value="us">
+                                <label class="form-check-label" for="li-2">
+                                    United States
+                                </label>
+                            </div>
+                        </li>
+                        <li class="dropdown-item">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="countryRadio" id="li-3" value="ua">
+                                <label class="form-check-label" for="li-3">
+                                    ukraine
+                                </label>
+                            </div>
+                        </li>
+                        <li class="dropdown-item">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="countryRadio" id="li-4" value="au">
+                                <label class="form-check-label" for="li-4">
+                                    Australia
+                                </label>
+                            </div>
+                        </li>
+                        <li class="dropdown-item">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="countryRadio" id="li-5" value="cn">
+                                <label class="form-check-label" for="li-5">
+                                    China
+                                </label>
+                            </div>
+                        </li>
+                        <li class="dropdown-item">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="countryRadio" id="li-6" value="nz">
+                                <label class="form-check-label" for="li-6">
+                                    New Zealand
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <hr>
             <!-- Accordian Starts from here -->
             <div class="container mx-3">
