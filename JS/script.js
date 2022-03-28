@@ -62,6 +62,10 @@ dropDownLists.addEventListener("change", function() {
             // taken variable as empty so we can add value here later.
             let newsHtml = "";
             articles.forEach(function(element, index) {
+
+                // Fix date and time of news properly.
+                let str = element.publishedAt;
+
                 // Inner HTML adding from here of newsAccordian.
                 let newsTemplate = `
                         <div class="accordion-item mb-2 border rounded-3 shadow-lg mb-2 bg-body">
@@ -72,7 +76,8 @@ dropDownLists.addEventListener("change", function() {
                         </h2>
                         <div id="collapse${index}" class="accordion-collapse collapse" aria-labelledby="heading${index}" data-bs-parent="#newsAccordian">
                             <div class="accordion-body">
-                                ${element.description}. ${element.publishedAt} <a href="${element.url}" target="_blank">(Read more)</a>.
+                                <!-- Fixed timing here with this replace("T", " ").replace("Z", "")-->
+                                ${element.description}. &emsp; At ${element.publishedAt.replace("T", " ").replace("Z", "")} <a href="${element.url}" target="_blank">(Read more)</a>.
                             </div>
                         </div>
                         </div>`
